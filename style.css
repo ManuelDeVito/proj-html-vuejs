@@ -65,8 +65,8 @@
 }
 
 .contenitore-title-generale {
-    height: 500px;
-    width: 86%;
+    height: 600px;
+    width: 100%;
     background-image: url(img/h2-background-img-02.png);
     background-size: cover;
 }
@@ -77,43 +77,141 @@
     float: left;
     display: flex;
     justify-content: flex-end;
-    padding-top: 100px;
+    padding-top: 130px;
     padding-left: 150px;
 }
 
 .contenitore-titolo h1 {
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .contenitore-sottotitolo {
     height: 100%;
     width: 50%;
     float: left;
-    padding-top: 160px;
-
+    padding-top: 180px;
 }
 
 .contenitore-sottotitolo p {
-    font-size: 18px;
+    font-size: 22px;
     padding-left: 150px;
 }
 
 .contenitore-centrale {
     height: 1800px;
-    width: 86%;
+    width: 100%;
     background-image: url(img/h2-background-img-01.png);
     background-size: contain;
-    padding-right: 132px;
-
+    padding-right: 300px;
 }
 
 .blocco {
-    height: 560px;
-    width: 560px;
+    height: 600px;
+    width: 600px;
     float: right;
-
 }
 
 .blocco img {
-    max-width: 560px;
+    max-width: 600px;
+}
+
+.contenitore-generale {
+    width: 100%;
+    height: 400px;
+
+}
+
+.contenitore-what-generale {
+    height: 100%;
+    width: 1200px;
+    margin-left: 420px;
+
+
+}
+
+.contenitore-what {
+    width: 45%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contenitore-what h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.contenitore-what p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contenitore-what button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 15px 0;
+    outline: none;
+    border-color: #80ABAE;
+    background-color: white;
+}
+
+.contenitore-what button:hover {
+    background-color: #80ABAE;
+    color: white;
+}
+
+.fa-caret-right {
+    padding-left: 10px;
+}
+
+.fa-caret-right:hover {
+    padding-left: 10px;
+    color: white;
+}
+
+.contenitore-riquadri {
+    width: 55%;
+    height: 100%;
+    float: left;
+
+}
+
+.riquadri {
+    height: 50%;
+    width: 50%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.riquadri img {
+
+}
+
+.riquadri span {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.contenitore-video {
+    height: 800px;
+    width: 100%;
+    position: relative;
+}
+
+.contenitore-video img:first-child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.contenitore-video img:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
