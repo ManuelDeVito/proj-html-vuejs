@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+
+}
+
+.contenitore-header {
+    height: 100px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+
+
+}
+
+.contenitore-logo-azienda {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+
+}
+
+.contenitore-logo-azienda img {
+    max-width: 100px;
+
+}
+
+.contenitore-menu-generale {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ccontenitore-menu ul {
+    list-style-type: none;
+
+}
+
+.contenitore-menu ul li:first-child {
+
+    border-bottom: 2px solid #EA9B82;
+}
+
+.contenitore-menu ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 30px;
+}
+
+.contenitore-menu ul li:last-child {
+    padding-right: 50px;
+
+}
+
+.contenitore-menu ul li:last-child img {
+    max-width: 20px;
+}
+
+.contenitore-title-generale {
+    height: 500px;
+    width: 86%;
+    background-image: url(img/h2-background-img-02.png);
+    background-size: cover;
+}
+
+.contenitore-titolo {
+    height: 100%;
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 100px;
+    padding-left: 150px;
+}
+
+.contenitore-titolo h1 {
+    font-size: 50px;
+}
+
+.contenitore-sottotitolo {
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding-top: 160px;
+
+}
+
+.contenitore-sottotitolo p {
+    font-size: 18px;
+    padding-left: 150px;
+}
+
+.contenitore-centrale {
+    height: 1800px;
+    width: 86%;
+    background-image: url(img/h2-background-img-01.png);
+    background-size: contain;
+    padding-right: 132px;
+
+}
+
+.blocco {
+    height: 560px;
+    width: 560px;
+    float: right;
+
+}
+
+.blocco img {
+    max-width: 560px;
+}
