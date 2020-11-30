@@ -13,8 +13,6 @@
     width: 100%;
     background-color: #FFFFFF;
     display: flex;
-
-
 }
 
 .contenitore-logo-azienda {
@@ -23,12 +21,10 @@
     display: flex;
     align-items: center;
     padding-left: 50px;
-
 }
 
 .contenitore-logo-azienda img {
     max-width: 100px;
-
 }
 
 .contenitore-menu-generale {
@@ -41,7 +37,6 @@
 
 .ccontenitore-menu ul {
     list-style-type: none;
-
 }
 
 .contenitore-menu ul li:first-child {
@@ -125,8 +120,6 @@
     height: 100%;
     width: 1200px;
     margin-left: 420px;
-
-
 }
 
 .contenitore-what {
@@ -186,10 +179,7 @@
     float: left;
     display: flex;
     align-items: center;
-}
-
-.riquadri img {
-
+    position: relative;
 }
 
 .riquadri span {
@@ -197,8 +187,20 @@
     padding-left: 20px;
 }
 
+.icone-social {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 150px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .contenitore-video {
-    height: 800px;
+    height: 700px;
     width: 100%;
     position: relative;
 }
