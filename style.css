@@ -233,9 +233,6 @@
     align-items: center;
 }
 
-.contenitore-card svg {
-    font-size: 50px;
-}
 
 .card-one {
     height: 600px;
@@ -396,4 +393,106 @@
 .card-tree button:hover {
     background-color: #80ABAE;
     color: white;
+}
+
+.contenitore-generale-contatti {
+    height: 500px;
+    width: 100%;
+}
+
+.contenitore-informazioni {
+    height: 100%;
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 300px;
+}
+
+.contenitore-informazioni h1 {
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+.contenitore-informazioni p {
+    font-size: 20px;
+    line-height: 1.6;
+
+}
+
+
+.contenitore-contatti {
+    height: 100%;
+    width: 50%;
+    float: left;
+
+
+}
+
+.primo-input {
+    display: flex;
+    justify-content: center;
+
+}
+
+.primo-input textarea {
+    width: 600px;
+    height: 30px;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-left: 5px;
+}
+
+.input-successivi {
+    display: flex;
+    justify-content: center;
+
+}
+
+.input-successivi input:first-child {
+    width: 285px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-left: 5px;
+
+}
+
+.input-successivi input:last-child {
+    width: 285px;
+    height: 30px;
+    margin-left: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-left: 5px;
+}
+
+.contenitore-button-submit {
+    display: flex;
+    align-items: center;
+}
+
+.contenitore-button-submit button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 70px;
+    margin-left: 180px;
+    border-color: #80ABAE;
+    background-color: white;
+}
+
+.contenitore-button-submit button:hover {
+    background-color: #80ABAE;
+    color: white;
+}
+
+
+.contenitore-footer {
+    height: 400px;
+    width: 100%;
+    background-image: url(img/h2-footer-img-01.jpg);
 }
