@@ -147,7 +147,6 @@
     padding: 10px;
     border-radius: 20px;
     margin: 15px 0;
-    outline: none;
     border-color: #80ABAE;
     background-color: white;
 }
@@ -177,9 +176,15 @@
     height: 50%;
     width: 50%;
     float: left;
+    padding-left: 30px;
     display: flex;
     align-items: center;
     position: relative;
+}
+
+.riquadri:hover {
+    border: 2px solid #EFCA9E;
+    border-radius: 30px;
 }
 
 .riquadri span {
@@ -216,4 +221,179 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.contenitore-card {
+    height: 900px;
+    width: 100%;
+    background-image: url(img/h2-background-img-03.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenitore-card svg {
+    font-size: 50px;
+}
+
+.card-one {
+    height: 600px;
+    width: 400px;
+    border: 2px solid #EFCA9E;
+    border-radius: 30px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.card-one h3 {
+    font-size: 30px;
+    padding-bottom: 25px;
+    padding-top: 80px;
+}
+
+.card-one h1 {
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+.card-one .fa-dollar-sign {
+    left: 237px;
+    position: absolute;
+    top: 150px;
+    font-size: 25px;
+}
+
+
+.card-one ul li {
+    padding: 6px 0;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.card-one button {
+    width: 205px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 30px auto;
+    border-color: #80ABAE;
+    background-color: white;
+    font-size: 16px;
+
+}
+
+.card-one button:hover {
+    background-color: #80ABAE;
+    color: white;
+}
+
+
+.card-two {
+    height: 600px;
+    width: 400px;
+    background-color: #E6F3F0;
+    border-radius: 30px;
+    border: none;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.card-two h3 {
+    font-size: 30px;
+    padding-bottom: 25px;
+    padding-top: 80px;
+}
+
+.card-two h1 {
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+.card-two .fa-dollar-sign {
+    left: 255px;
+    position: absolute;
+    top: 150px;
+    font-size: 25px;
+}
+
+
+.card-two ul li {
+    padding: 6px 0;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.card-two button {
+    width: 205px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 30px auto;
+    border-color: #80ABAE;
+    background-color: white;
+    font-size: 16px;
+
+}
+
+.card-two button:hover {
+    background-color: #80ABAE;
+    color: white;
+}
+
+.card-tree {
+    height: 600px;
+    width: 400px;
+    border: 2px solid #EA9B82;
+    border-radius: 30px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.card-tree h3 {
+    font-size: 30px;
+    padding-bottom: 25px;
+    padding-top: 80px;
+}
+
+.card-tree h1 {
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+.card-tree .fa-dollar-sign {
+    left: 255px;
+    position: absolute;
+    top: 150px;
+    font-size: 25px;
+}
+
+
+.card-tree ul li {
+    padding: 6px 0;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.card-tree button {
+    width: 205px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 30px auto;
+    border-color: #80ABAE;
+    background-color: white;
+    font-size: 16px;
+
+}
+
+.card-tree button:hover {
+    background-color: #80ABAE;
+    color: white;
 }
