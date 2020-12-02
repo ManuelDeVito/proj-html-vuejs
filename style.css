@@ -226,6 +226,7 @@
 
 .riquadro-beautifull:hover, .riquadro-brand:hover, .riquadro-qualified:hover, .riquadro-books:hover {
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .riquadro-beautifull:hover {
@@ -431,7 +432,7 @@
 
 /* ////////////// FINE MAIN - QUINTA PARTE ///////////////// */
 
-/* ////////////// INIZIO MAIN - SESTA PARTE ///////////////// */
+/* ////////////// INIZIO MAIN - ULTIMA PARTE ///////////////// */
 
 .contenitore-generale-contatti {
     height: 500px;
@@ -526,9 +527,9 @@
     cursor: pointer;
 }
 
-/* ////////////// FINE MAIN - SESTA PARTE ///////////////// */
+/* //////////////////////// FINE MAIN ////////////////////////// */
 
-/* /////////////////////// INIZIO FOOTER /////////////////////// */
+/* ///////////////////////// FOOTER /////////////////////// */
 
 .contenitore-footer {
     height: 400px;
@@ -614,5 +615,3 @@
     background-color: #629C7C;
 
 }
-
-/* /////////////////////// FINE FOOTER /////////////////////// */
