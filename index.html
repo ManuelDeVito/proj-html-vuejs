@@ -16,31 +16,16 @@
         <div id="root">
             <header class="contenitore-header">
                 <div class="contenitore-logo-azienda">
-                    <img src="img/logo-img-01.png" alt="logo-aziendale">
+                    <img :src="logo_azienda_header" alt="logo-aziendale">
                 </div>
                 <div class="contenitore-menu-generale">
                     <div class="contenitore-menu">
                         <ul>
-                            <li>
-                                Home
+                            <li v-for="elementi in menu">
+                                {{ elementi }}
                             </li>
                             <li>
-                                Pages
-                            </li>
-                            <li>
-                                Portfolio
-                            </li>
-                            <li>
-                                Blog
-                            </li>
-                            <li>
-                                Shop
-                            </li>
-                            <li>
-                                Elements
-                            </li>
-                            <li>
-                                <img src="svg/svg-1.png" alt="">
+                                <img :src="logo_menu_header" alt="logo_menu">
                             </li>
                         </ul>
                     </div>
@@ -182,21 +167,21 @@
             <footer>
                 <div class="contenitore-footer">
                     <div class="footer-text">
-                        <img src="img/logo-img-01.png" alt="">
-                        <p>Sometimes doing something seemingly demanding turns out to be fan.<br>Here's the proof - Bryson, new brand your portfolio.</p>
+                        <img :src="logo_azienda_footer" alt="logo_azienda">
+                        <p>{{ testo_footer }}</p>
                     </div>
                     <div class="contenitore-icon-social">
                         <div class="icon-social-instagram">
-                            <i class="fab fa-instagram"></i>
+                            <i class="fab" :class="icone_instagram"></i>
                         </div>
                         <div class="icon-social-facebook">
-                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab" :class="icone_facebook"></i>
                         </div>
                         <div class="icon-social-twitter">
-                            <i class="fab fa-twitter"></i>
+                            <i class="fab" :class="icone_twitter"></i>
                         </div>
                         <div class="icon-social-pinterest">
-                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab" :class="icone_pinterest"></i>
                         </div>
                     </div>
                 </div>
