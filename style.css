@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-#root {
-
-}
+/* ////////////////// INZIO HEADER //////////////////// */
 
 .contenitore-header {
     height: 100px;
@@ -36,10 +34,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.contenitore-menu ul {
-    list-style-type: none;
-}
-
 .contenitore-menu ul li:first-child {
     padding-bottom: 5px;
     border-bottom: 2px solid #EA9B82;
@@ -53,13 +47,16 @@
 
 .contenitore-menu ul li:last-child {
     padding-right: 50px;
-
 }
 
 .contenitore-menu ul li:last-child img {
     max-width: 60px;
 
 }
+
+/* ///////////////////// FINE HEADER //////////////////////// */
+
+/* ////////////// INIZIO MAIN - PRIMA PARTE ///////////////// */
 
 .contenitore-title-generale {
     height: 600px;
@@ -98,6 +95,10 @@
     color: grey;
 }
 
+/* ////////////// FINE MAIN - PRIMA PARTE ///////////////// */
+
+/* ////////////// INIZIO MAIN - SECONDA PARTE ///////////////// */
+
 .contenitore-centrale {
     height: 1800px;
     width: 100%;
@@ -106,20 +107,41 @@
     padding-right: 300px;
 }
 
+.blocco-one {
+    height: 600px;
+    width: 600px;
+    float: right;
+    position: relative;
+}
+
+.blocco img, .blocco-card img {
+    max-width: 600px;
+}
+
+.blocco-one .piega {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.blocco-one:hover .piega {
+    display: block;
+}
+
 .blocco {
     height: 600px;
     width: 600px;
     float: right;
 }
 
-.blocco img {
-    max-width: 600px;
-}
+/* ////////////// FINE MAIN - SECONDA PARTE ///////////////// */
+
+/* ////////////// INIZIO MAIN - TERZA PARTE ///////////////// */
 
 .contenitore-generale {
     width: 100%;
     height: 600px;
-
 }
 
 .contenitore-what-generale {
@@ -138,7 +160,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .contenitore-what h2 {
@@ -168,6 +189,7 @@
 .contenitore-what button:hover {
     background-color: #80ABAE;
     color: white;
+    cursor: pointer;
 }
 
 .fa-caret-right {
@@ -202,27 +224,29 @@
     padding-left: 20px;
 }
 
+.riquadro-beautifull:hover, .riquadro-brand:hover, .riquadro-qualified:hover, .riquadro-books:hover {
+    border-radius: 30px;
+}
+
 .riquadro-beautifull:hover {
     border: 2px solid #EFCA9E;
-    border-radius: 30px;
+
 }
 
 .riquadro-brand:hover {
     border: 2px solid #E6F3F0;
-    border-radius: 30px;
+
 }
 
 .riquadro-qualified:hover {
     border: 2px solid #69A9AA;
-    border-radius: 30px;
+
 }
 
 .riquadro-books:hover {
     border: 2px solid #D38367;
-    border-radius: 30px;
+
 }
-
-
 
 .icone-social {
     position: absolute;
@@ -235,6 +259,10 @@
     align-items: center;
     justify-content: space-around;
 }
+
+/* ////////////// FINE MAIN - TERZA PARTE ///////////////// */
+
+/* ////////////// INIZIO MAIN - QUARTA PARTE ///////////////// */
 
 .contenitore-video {
     height: 700px;
@@ -254,6 +282,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* ////////////// FINE MAIN - QUARTA PARTE ///////////////// */
+
+/* ////////////// INIZIO MAIN - QUINTA PARTE ///////////////// */
 
 .contenitore-card {
     height: 900px;
@@ -301,16 +333,19 @@
 }
 
 
-.card-one {
+.card-one, .card-two, .card-tree {
     height: 600px;
     width: 400px;
-    border: 2px solid #EFCA9E;
     border-radius: 30px;
     margin: 0 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
     position: relative;
+}
+
+.card-one {
+    border: 2px solid #EFCA9E;
 }
 
 .card-one h3, .card-two h3, .card-tree h3 {
@@ -329,9 +364,6 @@
 
 .card-one .fa-dollar-sign {
     left: 242px;
-    position: absolute;
-    top: 145px;
-    font-size: 25px;
 }
 
 
@@ -343,7 +375,7 @@
     color: grey;
 }
 
-.card-one button {
+.card-one button, .card-two button, .card-tree button {
     width: 205px;
     height: 50px;
     padding: 10px;
@@ -359,36 +391,23 @@
     color: white;
 }
 
-.card-two {
-    height: 600px;
-    width: 400px;
-    background-color: #E6F3F0;
-    border-radius: 30px;
-    border: none;
-    margin: 0 30px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
+.card-one button:hover, .card-two button:hover, .card-tree button:hover {
+    cursor: pointer;
 }
 
-.card-two .fa-dollar-sign {
-    left: 245px;
+.card-two {
+    background-color: #E6F3F0;
+    border: none;
+}
+
+.card-one .fa-dollar-sign, .card-two .fa-dollar-sign, .card-tree .fa-dollar-sign {
     position: absolute;
     top: 145px;
     font-size: 25px;
 }
 
-.card-two button {
-    width: 205px;
-    height: 50px;
-    padding: 10px;
-    border-radius: 20px;
-    margin: 30px auto;
-    border: 2px solid #80ABAE;
-    background-color: white;
-    font-size: 16px;
-
+.card-two .fa-dollar-sign {
+    left: 245px;
 }
 
 .card-two button:hover {
@@ -397,33 +416,11 @@
 }
 
 .card-tree {
-    height: 600px;
-    width: 400px;
     border: 2px solid #EA9B82;
-    border-radius: 30px;
-    margin: 0 30px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
 }
 
 .card-tree .fa-dollar-sign {
     left: 250px;
-    position: absolute;
-    top: 145px;
-    font-size: 25px;
-}
-
-.card-tree button {
-    width: 205px;
-    height: 50px;
-    padding: 10px;
-    border-radius: 20px;
-    margin: 30px auto;
-    border: 2px solid #80ABAE;
-    background-color: white;
-    font-size: 16px;
 
 }
 
@@ -431,6 +428,10 @@
     background-color: #80ABAE;
     color: white;
 }
+
+/* ////////////// FINE MAIN - QUINTA PARTE ///////////////// */
+
+/* ////////////// INIZIO MAIN - SESTA PARTE ///////////////// */
 
 .contenitore-generale-contatti {
     height: 500px;
@@ -491,7 +492,7 @@
 
 }
 
-.input-successivi input:first-child {
+.input-successivi input:first-child, .input-successivi input:last-child  {
     font-family: 'Karma', serif;
     width: 285px;
     height: 30px;
@@ -503,16 +504,9 @@
 }
 
 .input-successivi input:last-child {
-    font-family: 'Karma', serif;
-    width: 285px;
-    height: 30px;
     margin-left: 30px;
-    border: none;
-    border-bottom: 2px solid black;
-    padding-left: 5px;
-    font-size: 18px;
-}
 
+}
 
 .contenitore-button-submit button {
     width: 180px;
@@ -529,7 +523,12 @@
 .contenitore-button-submit button:hover {
     background-color: #80ABAE;
     color: white;
+    cursor: pointer;
 }
+
+/* ////////////// FINE MAIN - SESTA PARTE ///////////////// */
+
+/* /////////////////////// INIZIO FOOTER /////////////////////// */
 
 .contenitore-footer {
     height: 400px;
@@ -568,7 +567,7 @@
     align-items: center;
 }
 
-.icon-social-instagram {
+.icon-social-instagram, .icon-social-facebook, .icon-social-twitter, .icon-social-pinterest {
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -581,57 +580,39 @@
 }
 
 .icon-social-facebook {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    margin: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
     background-color: #EEC681;
 }
 
 .icon-social-twitter {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    margin: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
     background-color: #EFB6A4;
 }
 
 .icon-social-pinterest {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    margin: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
     background-color: #D8D597;
+}
+
+.icon-social-instagram:hover, .icon-social-facebook:hover, .icon-social-twitter:hover, .icon-social-pinterest:hover {
+    cursor: pointer;
 }
 
 .icon-social-instagram:hover {
     background-color: #69A9AA;
-    cursor: pointer;
+
 }
 
 .icon-social-facebook:hover {
     background-color: #E5A85A;
-    cursor: pointer;
+
 }
 
 .icon-social-twitter:hover {
     background-color: #E19074;
-    cursor: pointer;
+
 }
 
 .icon-social-pinterest:hover {
     background-color: #629C7C;
-    cursor: pointer;
+
 }
+
+/* /////////////////////// FINE FOOTER /////////////////////// */
