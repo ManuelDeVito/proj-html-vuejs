@@ -171,17 +171,8 @@
                         <p>{{ testo_footer }}</p>
                     </div>
                     <div class="contenitore-icon-social">
-                        <div class="icon-social-instagram">
-                            <i class="fab" :class="icone_instagram"></i>
-                        </div>
-                        <div class="icon-social-facebook">
-                            <i class="fab" :class="icone_facebook"></i>
-                        </div>
-                        <div class="icon-social-twitter">
-                            <i class="fab" :class="icone_twitter"></i>
-                        </div>
-                        <div class="icon-social-pinterest">
-                            <i class="fab" :class="icone_pinterest"></i>
+                        <div v-for="icone in icone_social">
+                            <i class="fab" :class="icone"></i>
                         </div>
                     </div>
                 </div>

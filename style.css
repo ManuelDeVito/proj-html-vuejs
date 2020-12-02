@@ -110,8 +110,6 @@
     height: 600px;
     width: 600px;
     float: right;
-    position: relative;
-    z-index: 0;
 }
 
 .blocco img {
