@@ -33,21 +33,22 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-.ccontenitore-menu ul {
+.contenitore-menu ul {
     list-style-type: none;
 }
 
 .contenitore-menu ul li:first-child {
-
+    padding-bottom: 5px;
     border-bottom: 2px solid #EA9B82;
 }
 
 .contenitore-menu ul li {
     display: inline-block;
     font-size: 20px;
-    padding: 0 30px;
+    margin: 0 30px;
 }
 
 .contenitore-menu ul li:last-child {
@@ -57,7 +58,7 @@
 
 .contenitore-menu ul li:last-child img {
     max-width: 60px;
-    
+
 }
 
 .contenitore-title-generale {
@@ -78,7 +79,9 @@
 }
 
 .contenitore-titolo h1 {
-    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 52px;
+    line-height: 1.3;
 }
 
 .contenitore-sottotitolo {
@@ -89,8 +92,10 @@
 }
 
 .contenitore-sottotitolo p {
-    font-size: 22px;
-    padding-left: 150px;
+    font-family: 'Karma', serif;
+    font-size: 21px;
+    padding-left: 140px;
+    color: grey;
 }
 
 .contenitore-centrale {
@@ -113,7 +118,7 @@
 
 .contenitore-generale {
     width: 100%;
-    height: 400px;
+    height: 600px;
 
 }
 
@@ -121,11 +126,14 @@
     height: 100%;
     width: 1200px;
     margin-left: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenitore-what {
     width: 45%;
-    height: 100%;
+    height: 400px;
     float: left;
     display: flex;
     flex-direction: column;
@@ -134,22 +142,27 @@
 }
 
 .contenitore-what h2 {
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     margin: 10px 0;
 }
 
 .contenitore-what p {
+    font-family: 'Karma', serif;
     font-size: 20px;
-    margin: 10px 0;
+    margin-bottom: 25px;
+    line-height: 1.6;
 }
 
 .contenitore-what button {
-    width: 150px;
+    width: 200px;
+    height: 50px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 40px;
     margin: 15px 0;
-    border-color: #80ABAE;
+    border: 2px solid #80ABAE;
     background-color: white;
+    font-size: 17px;
 }
 
 .contenitore-what button:hover {
@@ -168,7 +181,7 @@
 
 .contenitore-riquadri {
     width: 55%;
-    height: 100%;
+    height: 400px;
     float: left;
 
 }
@@ -181,6 +194,12 @@
     display: flex;
     align-items: center;
     position: relative;
+}
+
+.riquadro-beautifull span, .riquadro-qualified span, .riquadro-brand span, .riquadro-books span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
 }
 
 .riquadro-beautifull:hover {
@@ -203,14 +222,11 @@
     border-radius: 30px;
 }
 
-.riquadri span {
-    font-size: 20px;
-    padding-left: 20px;
-}
+
 
 .icone-social {
     position: absolute;
-    top: 2500px;
+    top: 2550px;
     right: 0;
     height: 150px;
     width: 50px;
@@ -297,28 +313,34 @@
     position: relative;
 }
 
-.card-one h3 {
-    font-size: 30px;
-    padding-bottom: 25px;
+.card-one h3, .card-two h3, .card-tree h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    padding-bottom: 10px;
     padding-top: 80px;
 }
 
-.card-one h1 {
-    font-size: 70px;
-    padding-bottom: 20px;
+.card-one h1, .card-two h1, .card-tree h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    padding-bottom: 10px;
 }
+
+
 .card-one .fa-dollar-sign {
-    left: 237px;
+    left: 242px;
     position: absolute;
-    top: 150px;
+    top: 145px;
     font-size: 25px;
 }
 
 
-.card-one ul li {
+.card-one ul li, .card-two ul li, .card-tree ul li {
+    font-family: 'Karma', serif;
     padding: 6px 0;
     font-size: 20px;
     list-style-type: none;
+    color: grey;
 }
 
 .card-one button {
@@ -327,17 +349,15 @@
     padding: 10px;
     border-radius: 20px;
     margin: 30px auto;
-    border-color: #80ABAE;
+    border: 2px solid #80ABAE;
     background-color: white;
     font-size: 16px;
-
 }
 
 .card-one button:hover {
     background-color: #80ABAE;
     color: white;
 }
-
 
 .card-two {
     height: 600px;
@@ -352,28 +372,11 @@
     position: relative;
 }
 
-.card-two h3 {
-    font-size: 30px;
-    padding-bottom: 25px;
-    padding-top: 80px;
-}
-
-.card-two h1 {
-    font-size: 70px;
-    padding-bottom: 20px;
-}
 .card-two .fa-dollar-sign {
-    left: 255px;
+    left: 245px;
     position: absolute;
-    top: 150px;
+    top: 145px;
     font-size: 25px;
-}
-
-
-.card-two ul li {
-    padding: 6px 0;
-    font-size: 20px;
-    list-style-type: none;
 }
 
 .card-two button {
@@ -382,7 +385,7 @@
     padding: 10px;
     border-radius: 20px;
     margin: 30px auto;
-    border-color: #80ABAE;
+    border: 2px solid #80ABAE;
     background-color: white;
     font-size: 16px;
 
@@ -405,28 +408,11 @@
     position: relative;
 }
 
-.card-tree h3 {
-    font-size: 30px;
-    padding-bottom: 25px;
-    padding-top: 80px;
-}
-
-.card-tree h1 {
-    font-size: 70px;
-    padding-bottom: 20px;
-}
 .card-tree .fa-dollar-sign {
-    left: 255px;
+    left: 250px;
     position: absolute;
-    top: 150px;
+    top: 145px;
     font-size: 25px;
-}
-
-
-.card-tree ul li {
-    padding: 6px 0;
-    font-size: 20px;
-    list-style-type: none;
 }
 
 .card-tree button {
@@ -435,7 +421,7 @@
     padding: 10px;
     border-radius: 20px;
     margin: 30px auto;
-    border-color: #80ABAE;
+    border: 2px solid #80ABAE;
     background-color: white;
     font-size: 16px;
 
@@ -462,16 +448,19 @@
 }
 
 .contenitore-informazioni h1 {
+    font-family: 'Poppins', sans-serif;
     font-size: 60px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    line-height: 1.1;
+
 }
 
 .contenitore-informazioni p {
+    font-family: 'Karma', serif;
     font-size: 20px;
     line-height: 1.6;
-
+    color: grey;
 }
-
 
 .contenitore-contatti {
     height: 100%;
@@ -481,56 +470,60 @@
 
 .primo-input {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .primo-input textarea {
+    font-family: 'Karma', serif;
     width: 600px;
     height: 30px;
     margin-top: 150px;
     margin-bottom: 80px;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     padding-left: 5px;
+    font-size: 18px;
 }
 
 .input-successivi {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
 }
 
 .input-successivi input:first-child {
+    font-family: 'Karma', serif;
     width: 285px;
     height: 30px;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     padding-left: 5px;
+    font-size: 18px;
 
 }
 
 .input-successivi input:last-child {
+    font-family: 'Karma', serif;
     width: 285px;
     height: 30px;
     margin-left: 30px;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     padding-left: 5px;
+    font-size: 18px;
 }
 
-.contenitore-button-submit {
-    display: flex;
-    align-items: center;
-}
 
 .contenitore-button-submit button {
-    width: 150px;
+    width: 180px;
+    height: 50px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-top: 70px;
-    margin-left: 180px;
-    border-color: #80ABAE;
+    border: 2px solid #80ABAE;
     background-color: white;
+    font-size: 16px;
+}
 }
 
 .contenitore-button-submit button:hover {
@@ -559,8 +552,10 @@
 }
 
 .footer-text p {
+    font-family: 'Karma', serif;
     line-height: 1.6;
     font-size: 17px;
+    color: grey;
 }
 
 .contenitore-icon-social {
