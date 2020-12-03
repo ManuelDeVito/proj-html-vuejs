@@ -39,17 +39,26 @@
     border-bottom: 2px solid #EA9B82;
 }
 
+.contenitore-menu {
+    position: relative;
+    margin-right: 120px;
+}
+
 .contenitore-menu ul li {
     display: inline-block;
     font-size: 20px;
     margin: 0 30px;
 }
 
-.contenitore-menu ul li:last-child {
-    padding-right: 50px;
+.contenitore-menu-generale span {
+    margin-right: 30px;
+    position: absolute;
+    top: 35px;
+    right: 16px;
+    padding-right: 0;
 }
 
-.contenitore-menu ul li:last-child img {
+.contenitore-menu-generale span img {
     max-width: 60px;
 
 }
@@ -272,6 +281,17 @@
     position: relative;
 }
 
+.contenitore-video .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contenitore-video .play:hover {
+    display: block;
+}
+
 .contenitore-video img:first-child {
     height: 100%;
     width: 100%;
@@ -283,6 +303,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.contenitore-video img:last-child:hover {
+    display: none;
 }
 
 /* ////////////// FINE MAIN - QUARTA PARTE ///////////////// */
