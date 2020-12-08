@@ -14,196 +14,198 @@
     </head>
     <body>
         <div id="root">
+            <div class="contenitore">
     <!-- /* ////////////////// INZIO HEADER //////////////////// */ -->
-            <header class="contenitore-header">
-                <div class="contenitore-logo-azienda">
-                    <img :src="logo_azienda_header" alt="logo-aziendale">
-                </div>
-                <div class="contenitore-menu-generale">
-                    <div class="contenitore-menu">
-                        <ul>
-                            <li v-for="elementi in menu">
-                                {{ elementi }}
-                            </li>
-                        </ul>
+                <header class="contenitore-header">
+                    <div class="contenitore-logo-azienda">
+                        <img :src="logo_azienda_header" alt="logo-aziendale">
                     </div>
-                    <span>
-                        <img :src="logo_menu_header" alt="logo_menu">
-                    </span>
-                </div>
-            </header>
+                    <div class="contenitore-menu-generale">
+                        <div class="contenitore-menu">
+                            <ul>
+                                <li @click="cambio_linea(indice)" :class="indice_menu == indice ? 'evidenziato' : '' " v-for="(elementi, indice) in menu">
+                                    {{ elementi }}
+                                </li>
+                            </ul>
+                        </div>
+                        <span>
+                            <img :src="logo_menu_header" alt="logo_menu">
+                        </span>
+                    </div>
+                </header>
 <!-- /* ///////////////////// FINE HEADER //////////////////////// */ -->
 
 <!-- /* ////////////// INIZIO MAIN - PRIMA PARTE ///////////////// */ -->
-            <main>
-                <div class="contenitore-title-generale">
-                    <div class="contenitore-titolo">
-                        <h1>We are Bryson, New York-based art & design studio</h1>
+                <main>
+                    <div class="contenitore-title-generale">
+                        <div class="contenitore-titolo">
+                            <h1>We are Bryson, New York-based art & design studio</h1>
+                        </div>
+                        <div class="contenitore-sottotitolo">
+                            <p>Here at bryson it only takes a smidgen of imagination and we've already prepared ourselves for future challenges. Take a peek and see if you recognize the trademark ingredients of our work.</p>
+                        </div>
                     </div>
-                    <div class="contenitore-sottotitolo">
-                        <p>Here at bryson it only takes a smidgen of imagination and we've already prepared ourselves for future challenges. Take a peek and see if you recognize the trademark ingredients of our work.</p>
-                    </div>
-                </div>
 <!-- /* ////////////// FINE MAIN - PRIMA PARTE ///////////////// */ -->
 
 <!-- /* ////////////// INIZIO MAIN - SECONDA PARTE ///////////////// */ -->
-                <div class="contenitore-centrale">
-                    <div class="blocco-one">
-                        <div class="blocco-card">
-                            <img src="img/port-img-08.jpg" alt="cartoline">
+                    <div class="contenitore-centrale">
+                        <div class="blocco-one">
+                            <div class="blocco-card">
+                                <img src="img/port-img-08.jpg" alt="cartoline">
+                            </div>
+                            <div class="piega">
+                                <img src="img/piega.png" alt="piega">
+                            </div>
                         </div>
-                        <div class="piega">
-                            <img src="img/piega.png" alt="piega">
+                        <div class="blocco">
+                            <img src="img/port-img-07.jpg" alt="paese">
+                        </div>
+                        <div class="blocco">
+                            <img src="img/port-img-10.jpg" alt="bambini">
+                        </div>
+                        <div class="blocco">
+                            <img src="img/port-img-09.jpg" alt="ltd-studios">
+                        </div>
+                        <div class="blocco">
+                            <img src="img/port-img-12.jpg" alt="libro">
+                        </div>
+                        <div class="blocco">
+                            <img src="img/port-img-11.jpg" alt="fidanzati">
                         </div>
                     </div>
-                    <div class="blocco">
-                        <img src="img/port-img-07.jpg" alt="paese">
-                    </div>
-                    <div class="blocco">
-                        <img src="img/port-img-10.jpg" alt="bambini">
-                    </div>
-                    <div class="blocco">
-                        <img src="img/port-img-09.jpg" alt="ltd-studios">
-                    </div>
-                    <div class="blocco">
-                        <img src="img/port-img-12.jpg" alt="libro">
-                    </div>
-                    <div class="blocco">
-                        <img src="img/port-img-11.jpg" alt="fidanzati">
-                    </div>
-                </div>
 <!-- /* ////////////// FINE MAIN - SECONDA PARTE ///////////////// */ -->
 
 <!-- /* ////////////// INIZIO MAIN - TERZA PARTE ///////////////// */ -->
-                <div class="contenitore-generale">
-                    <div class="contenitore-what-generale">
-                        <div class="contenitore-what">
-                            <h2>What we do?</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <button type="button" name="button">Read more<i class="fas fa-caret-right"></i></button>
+                    <div class="contenitore-generale">
+                        <div class="contenitore-what-generale">
+                            <div class="contenitore-what">
+                                <h2>What we do?</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <button class="bottone what" type="button" name="button">Read more<i class="fas fa-caret-right"></i></button>
+                            </div>
+                            <div class="contenitore-riquadri">
+                                <div class="riquadro riquadro-beautifull">
+                                    <img src="img/h2-icon-01.png" alt="foglia">
+                                    <span>Beautifull illustracions</span>
+                                </div>
+                                <div class="riquadro riquadro-qualified">
+                                    <img src="img/h2-icon-02.png" alt="cerchio">
+                                    <span>Qualified support</span>
+                                </div>
+                                <div class="riquadro riquadro-brand">
+                                    <img src="img/h2-icon-03.png" alt="ombrello">
+                                    <span>Brand strategies</span>
+                                </div>
+                                <div class="riquadro riquadro-books">
+                                    <img src="img/h2-icon-04.png" alt="pacco">
+                                    <span>Books & magazines</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="contenitore-riquadri">
-                            <div class="riquadro-beautifull">
-                                <img src="img/h2-icon-01.png" alt="foglia">
-                                <span>Beautifull illustracions</span>
-                            </div>
-                            <div class="riquadro-qualified">
-                                <img src="img/h2-icon-02.png" alt="cerchio">
-                                <span>Qualified support</span>
-                            </div>
-                            <div class="riquadro-brand">
-                                <img src="img/h2-icon-03.png" alt="ombrello">
-                                <span>Brand strategies</span>
-                            </div>
-                            <div class="riquadro-books">
-                                <img src="img/h2-icon-04.png" alt="pacco">
-                                <span>Books & magazines</span>
-                            </div>
+                        <div class="icone-social">
+                            <i class="icona fab fa-instagram"></i>
+                            <i class="icona fab fa-facebook-f"></i>
+                            <i class="icona fab fa-twitter"></i>
+                            <i class="icona fab fa-pinterest-p"></i>
                         </div>
                     </div>
-                    <div class="icone-social">
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-pinterest-p"></i>
-                    </div>
-                </div>
 <!-- /* ////////////// FINE MAIN - TERZA PARTE ///////////////// */ -->
 
 <!-- /* ////////////// INIZIO MAIN - QUARTA PARTE ///////////////// */ -->
-                <div class="contenitore-video">
-                    <img src="img/h2-img-2.jpg" alt="immagine-sfondo">
-                    <img class="play" src="img/main-home-video-button-img-02.png" alt="play-brown">
-                    <img src="img/main-home-video-button-img-01.png" alt="play-blue">
-                </div>
+                    <div class="contenitore-video">
+                        <img src="img/h2-img-2.jpg" alt="immagine-sfondo">
+                        <img class="play" src="img/main-home-video-button-img-02.png" alt="play-brown">
+                        <img src="img/main-home-video-button-img-01.png" alt="play-blue">
+                    </div>
 <!-- /* ////////////// FINE MAIN - QUARTA PARTE ///////////////// */ -->
 
 <!-- /* ////////////// INIZIO MAIN - QUINTA PARTE ///////////////// */ -->
-                <div class="contenitore-card">
-                    <div class="chiocciola">
-                        <img src="svg/svg-2.svg">
+                    <div class="contenitore-card">
+                        <div class="chiocciola">
+                            <img src="svg/svg-2.svg">
+                        </div>
+                        <div class="carrello">
+                            <img src="svg/svg-4.svg">
+                        </div>
+                        <div class="card card-one">
+                            <h3>Basic</h3>
+                            <h1>99</h1>
+                            <i class="fas fa-dollar-sign"></i>
+                            <ul>
+                                <li>5 Design concepts</li>
+                                <li>Full copyright ownership</li>
+                                <li>Art direction</li>
+                                <li>Top level creatives</li>
+                                <li>No money back</li>
+                            </ul>
+                            <button type="button" name="button">Learn more<i class="fas fa-caret-right"></i></button>
+                        </div>
+                        <div class="card card-two">
+                            <h3>Standard</h3>
+                            <h1>119</h1>
+                            <i class="fas fa-dollar-sign"></i>
+                            <ul>
+                                <li>10 Design concepts</li>
+                                <li>Full copyright ownership</li>
+                                <li>Art direction</li>
+                                <li>Top level creatives</li>
+                                <li>No money back</li>
+                            </ul>
+                            <button type="button" name="button">Learn more<i class="fas fa-caret-right"></i></button>
+                        </div>
+                        <div class="card card-tree">
+                            <h3>Basic</h3>
+                            <h1>139</h1>
+                            <i class="fas fa-dollar-sign"></i>
+                            <ul>
+                                <li>15 Design concepts</li>
+                                <li>Full copyright ownership</li>
+                                <li>Art direction</li>
+                                <li>Top level creatives</li>
+                                <li>No money back</li>
+                            </ul>
+                            <button type="button" name="button">Learn more<i class="fas fa-caret-right"></i></button>
+                        </div>
                     </div>
-                    <div class="carrello">
-                        <img src="svg/svg-4.svg">
-                    </div>
-                    <div class="card-one">
-                        <h3>Basic</h3>
-                        <h1>99</h1>
-                        <i class="fas fa-dollar-sign"></i>
-                        <ul>
-                            <li>5 Design concepts</li>
-                            <li>Full copyright ownership</li>
-                            <li>Art direction</li>
-                            <li>Top level creatives</li>
-                            <li>No money back</li>
-                        </ul>
-                        <button type="button" name="button">Learn more<i class="fas fa-caret-right"></i></button>
-                    </div>
-                    <div class="card-two">
-                        <h3>Standard</h3>
-                        <h1>119</h1>
-                        <i class="fas fa-dollar-sign"></i>
-                        <ul>
-                            <li>10 Design concepts</li>
-                            <li>Full copyright ownership</li>
-                            <li>Art direction</li>
-                            <li>Top level creatives</li>
-                            <li>No money back</li>
-                        </ul>
-                        <button type="button" name="button">Learn more<i class="fas fa-caret-right"></i></button>
-                    </div>
-                    <div class="card-tree">
-                        <h3>Basic</h3>
-                        <h1>139</h1>
-                        <i class="fas fa-dollar-sign"></i>
-                        <ul>
-                            <li>15 Design concepts</li>
-                            <li>Full copyright ownership</li>
-                            <li>Art direction</li>
-                            <li>Top level creatives</li>
-                            <li>No money back</li>
-                        </ul>
-                        <button type="button" name="button">Learn more<i class="fas fa-caret-right"></i></button>
-                    </div>
-                </div>
 <!-- /* ////////////// FINE MAIN - QUINTA PARTE ///////////////// */ -->
 
 <!-- /* ////////////// INIZIO MAIN - ULTIMA PARTE ///////////////// */ -->
-                <div class="contenitore-generale-contatti">
-                    <div class="contenitore-informazioni">
-                        <h1>Get in touch and say hello</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur sociis quis adipisicing elit. Aenean commodo ligula eget dolor. Aenean massa cum.</p>
+                    <div class="contenitore-generale-contatti">
+                        <div class="contenitore-informazioni">
+                            <h1>Get in touch and say hello</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur sociis quis adipisicing elit. Aenean commodo ligula eget dolor. Aenean massa cum.</p>
+                        </div>
+                        <div class="contenitore-contatti">
+                            <div class="primo-input">
+                                <textarea name="name" rows="8" cols="80" placeholder="Comment"></textarea>
+                            </div>
+                            <div class="input-successivi">
+                                <input type="text" placeholder="Name">
+                                <input type="Email" placeholder="Email">
+                            </div>
+                            <div class="contenitore-button-submit">
+                                <button class="bottone hello" type="button" name="button">Submit<i class="fas fa-caret-right"></i></button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contenitore-contatti">
-                        <div class="primo-input">
-                            <textarea name="name" rows="8" cols="80" placeholder="Comment"></textarea>
-                        </div>
-                        <div class="input-successivi">
-                            <input type="text" placeholder="Name">
-                            <input type="Email" placeholder="Email">
-                        </div>
-                        <div class="contenitore-button-submit">
-                            <button type="button" name="button">Submit<i class="fas fa-caret-right"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </main>
+                </main>
 <!-- /* /////////////////////// FINE MAIN /////////////////////// */ -->
 
 <!-- /* //////////////////////// FOOTER /////////////////////// */ -->
-            <footer>
-                <div class="contenitore-footer">
-                    <div class="footer-text">
-                        <img :src="logo_azienda_footer" alt="logo_azienda">
-                        <p>{{ testo_footer }}</p>
-                    </div>
-                    <div class="contenitore-icon-social">
-                        <div v-for="icone in icone_social">
-                            <i class="fab" :class="icone"></i>
+                <footer>
+                    <div class="contenitore-footer">
+                        <div class="footer-text">
+                            <img :src="logo_azienda_footer" alt="logo_azienda">
+                            <p>{{ testo_footer }}</p>
+                        </div>
+                        <div class="contenitore-icon-social">
+                            <div v-for="icone in icone_social">
+                                <i class="fab" :class="icone"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
+            </div>
         </div>
         <script src="main.js" charset="utf-8"></script>
     </body>

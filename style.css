@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
+.contenitore::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
 /* ////////////////// INZIO HEADER //////////////////// */
 
 .contenitore-header {
-    height: 100px;
     width: 100%;
     background-color: #FFFFFF;
     display: flex;
+    padding-top: 32px;
 }
 
 .contenitore-logo-azienda {
@@ -34,7 +40,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.contenitore-menu ul li:first-child {
+.evidenziato {
     padding-bottom: 5px;
     border-bottom: 2px solid #EA9B82;
 }
@@ -68,14 +74,13 @@
 /* ////////////// INIZIO MAIN - PRIMA PARTE ///////////////// */
 
 .contenitore-title-generale {
-    height: 600px;
     width: 100%;
     background-image: url(img/h2-background-img-02.png);
     background-size: cover;
+
 }
 
 .contenitore-titolo {
-    height: 100%;
     width: 50%;
     float: left;
     padding-top: 130px;
@@ -90,10 +95,10 @@
 }
 
 .contenitore-sottotitolo {
-    height: 100%;
     width: 50%;
     float: left;
     padding-top: 180px;
+    padding-bottom: 180px;
 }
 
 .contenitore-sottotitolo p {
@@ -108,11 +113,11 @@
 /* ////////////// INIZIO MAIN - SECONDA PARTE ///////////////// */
 
 .contenitore-centrale {
-    height: 1800px;
-    width: 100%;
+    width: 1200px;
     background-image: url(img/h2-background-img-01.png);
     background-size: contain;
-    padding-right: 300px;
+    margin: auto;
+
 }
 
 .blocco-one {
@@ -147,15 +152,10 @@
 
 /* ////////////// INIZIO MAIN - TERZA PARTE ///////////////// */
 
-.contenitore-generale {
-    width: 100%;
-    height: 600px;
-}
 
 .contenitore-what-generale {
-    height: 100%;
     width: 1200px;
-    margin-left: 420px;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +163,7 @@
 
 .contenitore-what {
     width: 45%;
-    height: 400px;
+    padding: 80px 0;
     float: left;
     display: flex;
     flex-direction: column;
@@ -184,18 +184,21 @@
     padding-right: 80px;
 }
 
-.contenitore-what button {
+.bottone {
     width: 200px;
     height: 50px;
     padding: 10px;
     border-radius: 40px;
-    margin: 15px 0;
     border: 2px solid #80ABAE;
     background-color: white;
     font-size: 17px;
 }
 
-.contenitore-what button:hover {
+.bottone.what {
+    margin: 15px 0;
+}
+
+.bottone:hover {
     background-color: #80ABAE;
     color: white;
     cursor: pointer;
@@ -212,29 +215,26 @@
 
 .contenitore-riquadri {
     width: 55%;
-    height: 400px;
     float: left;
-
 }
 
-.riquadro-beautifull, .riquadro-qualified, .riquadro-brand, .riquadro-books{
-    height: 50%;
+.riquadro {
     width: 50%;
     float: left;
-    padding-left: 30px;
+    padding: 57px;
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.riquadro-beautifull span, .riquadro-qualified span, .riquadro-brand span, .riquadro-books span {
+.riquadro span {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.riquadro-beautifull:hover, .riquadro-brand:hover, .riquadro-qualified:hover, .riquadro-books:hover {
+.riquadro:hover {
     border-radius: 30px;
     cursor: pointer;
 }
@@ -244,13 +244,13 @@
 
 }
 
-.riquadro-brand:hover {
-    border: 2px solid #E6F3F0;
+.riquadro-qualified:hover {
+    border: 2px solid #69A9AA;
 
 }
 
-.riquadro-qualified:hover {
-    border: 2px solid #69A9AA;
+.riquadro-brand:hover {
+    border: 2px solid #E6F3F0;
 
 }
 
@@ -261,9 +261,8 @@
 
 .icone-social {
     position: absolute;
-    top: 2550px;
+    top: 2340px;
     right: 0;
-    height: 150px;
     width: 50px;
     display: flex;
     flex-direction: column;
@@ -271,12 +270,15 @@
     justify-content: space-around;
 }
 
+.icona {
+    padding: 10px 0;
+}
+
 /* ////////////// FINE MAIN - TERZA PARTE ///////////////// */
 
 /* ////////////// INIZIO MAIN - QUARTA PARTE ///////////////// */
 
 .contenitore-video {
-    height: 700px;
     width: 100%;
     position: relative;
 }
@@ -293,7 +295,6 @@
 }
 
 .contenitore-video img:first-child {
-    height: 100%;
     width: 100%;
     background-size: cover;
 }
@@ -314,8 +315,8 @@
 /* ////////////// INIZIO MAIN - QUINTA PARTE ///////////////// */
 
 .contenitore-card {
-    height: 900px;
     width: 100%;
+    padding: 150px 0;
     background-image: url(img/h2-background-img-03.png);
     background-size: cover;
     display: flex;
@@ -359,7 +360,7 @@
 }
 
 
-.card-one, .card-two, .card-tree {
+.card {
     height: 600px;
     width: 400px;
     border-radius: 30px;
@@ -374,14 +375,14 @@
     border: 2px solid #EFCA9E;
 }
 
-.card-one h3, .card-two h3, .card-tree h3 {
+.card h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     padding-bottom: 10px;
     padding-top: 80px;
 }
 
-.card-one h1, .card-two h1, .card-tree h1 {
+.card h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 60px;
     padding-bottom: 10px;
@@ -393,7 +394,7 @@
 }
 
 
-.card-one ul li, .card-two ul li, .card-tree ul li {
+.card ul li {
     font-family: 'Karma', serif;
     padding: 6px 0;
     font-size: 20px;
@@ -401,7 +402,7 @@
     color: grey;
 }
 
-.card-one button, .card-two button, .card-tree button {
+.card button {
     width: 205px;
     height: 50px;
     padding: 10px;
@@ -417,7 +418,7 @@
     color: white;
 }
 
-.card-one button:hover, .card-two button:hover, .card-tree button:hover {
+.card button:hover {
     cursor: pointer;
 }
 
@@ -426,7 +427,7 @@
     border: none;
 }
 
-.card-one .fa-dollar-sign, .card-two .fa-dollar-sign, .card-tree .fa-dollar-sign {
+.card .fa-dollar-sign {
     position: absolute;
     top: 145px;
     font-size: 25px;
@@ -520,7 +521,7 @@
 
 }
 
-.input-successivi input:first-child, .input-successivi input:last-child  {
+.input-successivi input  {
     font-family: 'Karma', serif;
     width: 285px;
     height: 30px;
@@ -536,23 +537,11 @@
 
 }
 
-.contenitore-button-submit button {
-    width: 180px;
-    height: 50px;
-    padding: 10px;
-    border-radius: 30px;
+.bottone.hello {
     margin-top: 70px;
-    border: 2px solid #80ABAE;
-    background-color: white;
-    font-size: 16px;
 }
 
 
-.contenitore-button-submit button:hover {
-    background-color: #80ABAE;
-    color: white;
-    cursor: pointer;
-}
 
 /* //////////////////////// FINE MAIN ////////////////////////// */
 
