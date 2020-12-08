@@ -49,28 +49,34 @@
 
 <!-- /* ////////////// INIZIO MAIN - SECONDA PARTE ///////////////// */ -->
                     <div class="contenitore-centrale">
-                        <div class="blocco-one">
-                            <div class="blocco-card">
-                                <img src="img/port-img-08.jpg" alt="cartoline">
+                        <div class="contenitore-blocchi">
+                            <div class="blocchi-left">
+                                <div class="blocco">
+                                    <img src="img/port-img-07.jpg" alt="paese">
+                                </div>
+                                <div class="blocco">
+                                    <img src="img/port-img-09.jpg" alt="ltd-studios">
+                                </div>
+                                <div class="blocco">
+                                    <img src="img/port-img-11.jpg" alt="fidanzati">
+                                </div>
                             </div>
-                            <div class="piega">
-                                <img src="img/piega.png" alt="piega">
+                            <div class="blocchi-right">
+                                <div class="blocco-one">
+                                    <div class="blocco-card">
+                                        <img src="img/port-img-08.jpg" alt="cartoline">
+                                    </div>
+                                    <div class="piega">
+                                        <img src="img/piega.png" alt="piega">
+                                    </div>
+                                </div>
+                                <div class="blocco">
+                                    <img src="img/port-img-10.jpg" alt="bambini">
+                                </div>
+                                <div class="blocco">
+                                    <img src="img/port-img-12.jpg" alt="libro">
+                                </div>
                             </div>
-                        </div>
-                        <div class="blocco">
-                            <img src="img/port-img-07.jpg" alt="paese">
-                        </div>
-                        <div class="blocco">
-                            <img src="img/port-img-10.jpg" alt="bambini">
-                        </div>
-                        <div class="blocco">
-                            <img src="img/port-img-09.jpg" alt="ltd-studios">
-                        </div>
-                        <div class="blocco">
-                            <img src="img/port-img-12.jpg" alt="libro">
-                        </div>
-                        <div class="blocco">
-                            <img src="img/port-img-11.jpg" alt="fidanzati">
                         </div>
                     </div>
 <!-- /* ////////////// FINE MAIN - SECONDA PARTE ///////////////// */ -->
@@ -84,21 +90,26 @@
                                 <button class="bottone what" type="button" name="button">Read more<i class="fas fa-caret-right"></i></button>
                             </div>
                             <div class="contenitore-riquadri">
-                                <div class="riquadro riquadro-beautifull">
-                                    <img src="img/h2-icon-01.png" alt="foglia">
-                                    <span>Beautifull illustracions</span>
+                                <div class="riquadro-left">
+                                    <div class="riquadro riquadro-beautifull">
+                                        <img src="img/h2-icon-01.png" alt="foglia">
+                                        <span>Beautifull illustracions</span>
+                                    </div>
+                                    <div class="riquadro riquadro-brand">
+                                        <img src="img/h2-icon-03.png" alt="ombrello">
+                                        <span>Qualified support</span>
+                                    </div>
                                 </div>
-                                <div class="riquadro riquadro-qualified">
-                                    <img src="img/h2-icon-02.png" alt="cerchio">
-                                    <span>Qualified support</span>
-                                </div>
-                                <div class="riquadro riquadro-brand">
-                                    <img src="img/h2-icon-03.png" alt="ombrello">
-                                    <span>Brand strategies</span>
-                                </div>
-                                <div class="riquadro riquadro-books">
-                                    <img src="img/h2-icon-04.png" alt="pacco">
-                                    <span>Books & magazines</span>
+                                <div class="riquadro-right">
+                                    <div class="riquadro riquadro-qualified">
+                                        <img src="img/h2-icon-02.png" alt="cerchio">
+                                        <span>Brand strategies</span>
+                                    </div>
+
+                                    <div class="riquadro riquadro-books">
+                                        <img src="img/h2-icon-04.png" alt="pacco">
+                                        <span>Books & magazines</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -121,10 +132,10 @@
 
 <!-- /* ////////////// INIZIO MAIN - QUINTA PARTE ///////////////// */ -->
                     <div class="contenitore-card">
-                        <div class="chiocciola">
+                        <div class="quadrato chiocciola">
                             <img src="svg/svg-2.svg">
                         </div>
-                        <div class="carrello">
+                        <div class="quadrato carrello">
                             <img src="svg/svg-4.svg">
                         </div>
                         <div class="card card-one">
@@ -195,7 +206,7 @@
                 <footer>
                     <div class="contenitore-footer">
                         <div class="footer-text">
-                            <img :src="logo_azienda_footer" alt="logo_azienda">
+                            <h3>{{ nome_azienda_footer }}</h3>
                             <p>{{ testo_footer }}</p>
                         </div>
                         <div class="contenitore-icon-social">

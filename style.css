@@ -10,17 +10,23 @@
     display: table;
 }
 
+h1, h2, h3, span {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, input, textarea {
+    font-family: 'Karma', serif;
+}
+
 /* ////////////////// INZIO HEADER //////////////////// */
 
 .contenitore-header {
-    width: 100%;
     background-color: #FFFFFF;
     display: flex;
-    padding-top: 32px;
+    padding: 30px 0;
 }
 
 .contenitore-logo-azienda {
-    height: 100%;
     width: 50%;
     display: flex;
     align-items: center;
@@ -32,7 +38,6 @@
 }
 
 .contenitore-menu-generale {
-    height: 100%;
     width: 50%;
     display: flex;
     justify-content: flex-end;
@@ -74,35 +79,30 @@
 /* ////////////// INIZIO MAIN - PRIMA PARTE ///////////////// */
 
 .contenitore-title-generale {
-    width: 100%;
-    background-image: url(img/h2-background-img-02.png);
+    background-image: url("img/h2-background-img-02.png");
     background-size: cover;
+    display: flex;
 
 }
 
 .contenitore-titolo {
     width: 50%;
-    float: left;
-    padding-top: 130px;
-    padding-left: 150px;
+    padding-top: 120px;
+    padding-bottom: 200px;
 }
 
 .contenitore-titolo h1 {
-    font-family: 'Poppins', sans-serif;
     font-size: 52px;
     line-height: 1.3;
-    padding-left: 140px;
+    padding-left: 318px;
 }
 
 .contenitore-sottotitolo {
     width: 50%;
-    float: left;
     padding-top: 180px;
-    padding-bottom: 180px;
 }
 
 .contenitore-sottotitolo p {
-    font-family: 'Karma', serif;
     font-size: 21px;
     padding-left: 140px;
     color: grey;
@@ -113,17 +113,21 @@
 /* ////////////// INIZIO MAIN - SECONDA PARTE ///////////////// */
 
 .contenitore-centrale {
-    width: 1200px;
-    background-image: url(img/h2-background-img-01.png);
-    background-size: contain;
-    margin: auto;
+    width: 100%;
+    background-image: url("img/h2-background-img-01.png");
+    background-size: cover;
 
+}
+
+.contenitore-blocchi {
+    width: 1200px;
+    margin: auto;
+    display: flex;
 }
 
 .blocco-one {
     height: 600px;
     width: 600px;
-    float: right;
     position: relative;
 }
 
@@ -145,7 +149,7 @@
 .blocco {
     height: 600px;
     width: 600px;
-    float: right;
+
 }
 
 /* ////////////// FINE MAIN - SECONDA PARTE ///////////////// */
@@ -157,27 +161,23 @@
     width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 100px 0;
 }
 
 .contenitore-what {
     width: 45%;
     padding: 80px 0;
-    float: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .contenitore-what h2 {
-    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     margin: 10px 0;
 }
 
 .contenitore-what p {
-    font-family: 'Karma', serif;
     font-size: 20px;
     margin-bottom: 25px;
     line-height: 1.6;
@@ -215,23 +215,19 @@
 
 .contenitore-riquadri {
     width: 55%;
-    float: left;
+    display: flex;
 }
 
 .riquadro {
-    width: 50%;
-    float: left;
-    padding: 57px;
+    padding: 50px;
     display: flex;
     align-items: center;
     position: relative;
 }
 
 .riquadro span {
-    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     padding-left: 20px;
-    padding-right: 20px;
 }
 
 .riquadro:hover {
@@ -261,7 +257,7 @@
 
 .icone-social {
     position: absolute;
-    top: 2340px;
+    top: 2500px;
     right: 0;
     width: 50px;
     display: flex;
@@ -279,7 +275,6 @@
 /* ////////////// INIZIO MAIN - QUARTA PARTE ///////////////// */
 
 .contenitore-video {
-    width: 100%;
     position: relative;
 }
 
@@ -315,9 +310,8 @@
 /* ////////////// INIZIO MAIN - QUINTA PARTE ///////////////// */
 
 .contenitore-card {
-    width: 100%;
     padding: 150px 0;
-    background-image: url(img/h2-background-img-03.png);
+    background-image: url("img/h2-background-img-03.png");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -325,17 +319,20 @@
     position: relative;
 }
 
-.chiocciola {
+.quadrato {
     height: 40px;
     width: 40px;
-    background-color: #EE2852;
     position: absolute;
-    top: 53%;
     right: 0;
     max-width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.chiocciola {
+    background-color: #EE2852;
+    top: 53%;
 }
 
 .chiocciola img {
@@ -343,22 +340,13 @@
 }
 
 .carrello {
-    height: 40px;
-    width: 40px;
     background-color: #FFFFFF;
-    position: absolute;
     top: 59%;
-    right: 0;
-    max-width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .carrello img {
     max-width: 20px;
 }
-
 
 .card {
     height: 600px;
@@ -371,28 +359,22 @@
     position: relative;
 }
 
-.card-one {
-    border: 2px solid #EFCA9E;
-}
-
 .card h3 {
-    font-family: 'Poppins', sans-serif;
     font-size: 25px;
     padding-bottom: 10px;
     padding-top: 80px;
 }
 
 .card h1 {
-    font-family: 'Poppins', sans-serif;
     font-size: 60px;
     padding-bottom: 10px;
 }
 
-
-.card-one .fa-dollar-sign {
-    left: 242px;
+.card .fa-dollar-sign {
+    position: absolute;
+    top: 145px;
+    font-size: 25px;
 }
-
 
 .card ul li {
     font-family: 'Karma', serif;
@@ -413,13 +395,18 @@
     font-size: 16px;
 }
 
-.card-one button:hover {
+.card button:hover {
     background-color: #80ABAE;
     color: white;
+    cursor: pointer;
 }
 
-.card button:hover {
-    cursor: pointer;
+.card-one {
+    border: 2px solid #EFCA9E;
+}
+
+.card-one .fa-dollar-sign {
+    left: 242px;
 }
 
 .card-two {
@@ -427,19 +414,8 @@
     border: none;
 }
 
-.card .fa-dollar-sign {
-    position: absolute;
-    top: 145px;
-    font-size: 25px;
-}
-
 .card-two .fa-dollar-sign {
     left: 245px;
-}
-
-.card-two button:hover {
-    background-color: #80ABAE;
-    color: white;
 }
 
 .card-tree {
@@ -451,41 +427,31 @@
 
 }
 
-.card-tree button:hover {
-    background-color: #80ABAE;
-    color: white;
-}
 
 /* ////////////// FINE MAIN - QUINTA PARTE ///////////////// */
 
 /* ////////////// INIZIO MAIN - ULTIMA PARTE ///////////////// */
 
 .contenitore-generale-contatti {
-    height: 500px;
-    width: 100%;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+
 }
 
 .contenitore-informazioni {
-    height: 100%;
     width: 50%;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 300px;
+    margin: 150px 0;
 }
 
 .contenitore-informazioni h1 {
-    font-family: 'Poppins', sans-serif;
     font-size: 60px;
     padding-bottom: 20px;
     line-height: 1.1;
     padding-right: 160px;
-
 }
 
 .contenitore-informazioni p {
-    font-family: 'Karma', serif;
     font-size: 20px;
     line-height: 1.6;
     color: grey;
@@ -493,21 +459,13 @@
 }
 
 .contenitore-contatti {
-    height: 100%;
     width: 50%;
-    float: left;
-}
-
-.primo-input {
-    display: flex;
-    justify-content: flex-start;
+    margin: 170px 0;
 }
 
 .primo-input textarea {
-    font-family: 'Karma', serif;
     width: 600px;
     height: 30px;
-    margin-top: 150px;
     margin-bottom: 80px;
     border: none;
     border-bottom: 2px solid black;
@@ -516,29 +474,24 @@
 }
 
 .input-successivi {
-    display: flex;
-    justify-content: flex-start;
-
+    display: inline-flex;
 }
 
 .input-successivi input  {
-    font-family: 'Karma', serif;
     width: 285px;
     height: 30px;
     border: none;
     border-bottom: 2px solid black;
     padding-left: 5px;
     font-size: 18px;
-
 }
 
 .input-successivi input:last-child {
     margin-left: 30px;
-
 }
 
 .bottone.hello {
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 
@@ -548,40 +501,35 @@
 /* ///////////////////////// FOOTER /////////////////////// */
 
 .contenitore-footer {
-    height: 400px;
-    width: 100%;
-    background-image: url(img/h2-footer-img-01.jpg);
+    background-image: url("img/h2-footer-img-01.jpg");
 }
 
 .footer-text {
-    height: 250px;
     width: 555px;
     margin: auto;
-    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 30px;
     text-align: center;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
 
 }
-.footer-text img {
-    max-width: 100px;
+.footer-text h3 {
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
 .footer-text p {
-    font-family: 'Karma', serif;
     line-height: 1.6;
     font-size: 17px;
     color: grey;
 }
 
 .contenitore-icon-social {
-    height: 100px;
-    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-bottom: 100px;
 }
 
 .icon-social-instagram, .icon-social-facebook, .icon-social-twitter, .icon-social-pinterest {
